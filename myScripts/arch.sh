@@ -10,7 +10,7 @@
 
 ## Xorg & DM {
     sudo pacman -Sy xorg-server xorg-xinit
-    sudo pacman -Sy lightdm lightdm-webkit2-greeter
+    sudo pacman -S lightdm lightdm-webkit2-greeter
     sudo systemctl enable lightdm
 ## }
 
@@ -21,7 +21,7 @@
     sudo pacman -S cmake
 
     echo '------------ git -------------'
-    sudo pacman -Sy  git
+    sudo pacman -S  git
     git config --global user.name "damon"
     git config --global user.email "blurm@126.com"
 
@@ -35,26 +35,26 @@
     yay -Sy man
     # A simple text edit tool for later use
     echo '------------------------ ed ------------------------------'
-    yay -Sy ed
+    yay -S ed
 ## }
 
 ## Internet {
     echo '----------------- google-chrome -------------------'
-    yay -Sy chromium
+    yay -S chromium
 ## }
 
 echo '------------------------ calibre ------------------------------'
-    yay -Sy  calibre
+    yay -S  calibre
 
 
 ## System tools {
     echo '----------------- System Tools -------------------'
     echo '----------------- htop -------------------'
-    yay -Sy htop
+    yay -S htop
     #echo '----------------- Input Methods -------------------'
-    yay -Sy fcitx-im fcitx-configtool fcitx-rime
-    yay -Sy fcitx-qt5 fcitx-skins
-    #yay -Sy fcitx-sogoupinyin
+    yay -S fcitx-im fcitx-configtool fcitx-rime
+    yay -S fcitx-qt5 fcitx-skins
+    #yay -S fcitx-sogoupinyin
 
     # create .xprofile
     #(
@@ -71,35 +71,35 @@ echo '------------------------ calibre ------------------------------'
 
 
     echo '----------------- unrar -------------------'
-    sudo yay -Sy unrar
+    sudo yay -S unrar
 
 
     echo '----------------- ranger (file manager)-------------------'
-    yay -Sy ranger
+    yay -S ranger
     # Dependencies for ranger
-    # Syay -Sy atool mediainfo
-    # yay -Sy xsel
+    # Syay -S atool mediainfo
+    # yay -S xsel
 
     #echo '----------------- minidlna -------------------'
     #sudo pacman -s  minidlna
 
     # Psensor 检查CPU温度
     echo '----------------- lm-sensors, hddtemp -------------------'
-    yay -Sy lm_sensors hddtemp
+    yay -S lm_sensors hddtemp
     ## 检测硬件传感器
     #sudo sensors-detect
     #sensors
     echo '----------------- psensor -------------------'
-    yay -Sy psensor
+    yay -S psensor
 
 
     # Logitech mouse
     echo '----------------- xbindkeys -------------------'
-    yay -Sy xbindkeys
+    yay -S xbindkeys
 
     # Partition Tools
     echo '----------------- gparted -------------------'
-    yay -Sy gparted
+    yay -S gparted
 
     # Copy to Or paste to X clipboard
     echo '----------------- xclip -------------------'
@@ -109,23 +109,23 @@ echo '------------------------ calibre ------------------------------'
 ## Window Manager {
     # i3-wm
     #echo '----------------------- i3wm ---------------------------'
-    #yay -Sy i3-gaps
+    #yay -S i3-gaps
 
     #echo '----------------------- bspwm ---------------------------'
     yay -Sy bspwm sxhkd
 
     # polybar - status bar tools
     echo '----------------------- polybar ---------------------------'
-    yay -Sy polybar
+    yay -S polybar
     yay -S alsa-utils
     yay -S network-manager-applet
 
     # picom(fork from compton), a compositor for Xorg
     echo '----------------------- picom ---------------------------'
-    yay -Sy picom
+    yay -S picom
 
     # Wallpaper
-    yay -Sy feh
+    yay -S feh
 
     echo '----------------------- rofi ---------------------------'
     yay -S rofi
@@ -134,49 +134,50 @@ echo '------------------------ calibre ------------------------------'
 
 ## Virtual Machine {
     echo '----------------------- virtualbox ---------------------------'
-    yay -Sy virtualbox
+    yay -S virtualbox
 ## }
 
 ## 系统美化 {
     # theme tools
     echo '----------------------- Theme config tools ---------------------------'
-    yay -Sy kvantum-qt5 qt5ct
-    yay -Sy sierra-gtk-theme-git
-    yay -Sy gtk-engine-murrine gtk-engines
+    yay -S kvantum-qt5 qt5ct
+    yay -S sierra-gtk-theme-git
+    yay -S gtk-engine-murrine gtk-engines
     # 美化系统，类似Unity-tweak-tools，在这里修改theme, only for GTK+
-    yay -Sy lxappearance
+    yay -S lxappearance
     #echo '----------------------- fonts ---------------------------'
     # TODO 安装字体(i3,awesome font)
     echo '----------------------- Icon ---------------------------'
     yay -S la-capitaine-icon-theme
     echo '----------------------- Icon Fonts ---------------------------'
-    #yay -Sy ttf-font-awesome ttf-material-design-icons
-    yay -Sy nerd-fonts-complete
+    #yay -S ttf-font-awesome ttf-material-design-icons
+    yay -S nerd-fonts-complete
     echo '----------------------- powerline ---------------------------'
-    yay -Sy powerline powerline-fonts
-    yay -Sy noto-fonts-emoji
+    yay -S powerline powerline-fonts
+    yay -S noto-fonts-emoji
     # font for code or terminal
-    yay -Sy ttf-dejavu otf-mplus ttf-meslo ttf-roboto
-    yay -Sy adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-han-mono-otc-fonts
+    yay -S ttf-dejavu otf-mplus ttf-meslo ttf-roboto
+    yay -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
+    #yay -S adobe-source-han-mono-otc-fonts
 ## }
 
 ## Entertainment
     echo '----------------------- smplayer ---------------------------'
-    yay -Sy smplayer
+    yay -S smplayer
     #echo '----------------------- kodi ---------------------------'
-    #yay -Sy kodi
+    #yay -S kodi
 
 ## Photo & Media
     # echo '----------------------- Darktable ---------------------------'
-    # yay -Sy darktable
+    # yay -S darktable
 
 
 
 ## Downloading Tools {
     echo '----------------------- uget ---------------------------'
-    yay -Sy uget uget-integrator-chrome
+    yay -S uget uget-integrator-chrome
     echo '----------------------- aria2 ---------------------------'
-    yay -Sy aria2
+    yay -S aria2
 ## }
 
 
@@ -184,38 +185,39 @@ echo '------------------------ calibre ------------------------------'
     echo '----------------- Developing Tools -------------------'
     echo '----------------------- vim ---------------------------'
     # vim doesn't support clipboard
-    yay -Sy gvim
+    yay -S gvim
     echo '----------------------- meld ---------------------------'
     # diff tool to comparing files
-    yay -Sy meld
+    yay -S meld
     echo '----------------------- neovim ---------------------------'
-    yay -Sy neovim
+    yay -S neovim
 
     # Java
     # Eclipse (will install openjdk automatically)
-    yay -Sy eclipse
+    yay -S eclipse
 
     # Python
     #sudo apt -y install phantomjs
-    yay -Sy python-requests flake8 python-selenium python-beautifulsoup4 python-jedi autopep8 yapf
-    yay -Sy python2-pyquery python-pyquery
+    yay -S python-requests flake8 python-selenium python-beautifulsoup4 python-jedi autopep8 yapf
+    yay -S python2-pyquery python-pyquery
 
     # nodejs
-    yay -Sy nodejs npm
+    yay -S nodejs npm
     # Error and problem detecting tool for Vim
     #sudo npm install -g jshint
     #sudo npm install -g tern
-    #yay -Sy nodejs-jshint nodejs-tern
+    #yay -S nodejs-jshint nodejs-tern
 ## }
 
 ## Clone dotfiles from Git {
-    echo '---------------------- myconfigs ---------------------'
-    git clone https://github.com/blurm/myconfigs ~/git4install/myconfigs
+    #echo '---------------------- myconfigs ---------------------'
+    #git clone https://github.com/blurm/myconfigs ~/git4install/myconfigs
 ## }
 
 ## Install plugins for Vim {
     echo '---------------------- vim plugins ---------------------'
     #cp ~/git4install/myconfigs_temp/{.vimrc,.viminfo} /home/damon
+    mkdir -p ~/.vim/autoload
     cd ~/.vim/autoload
     git clone https://github.com/blurm/damonvim.git
     #vim +PluginInstall +qall
@@ -238,12 +240,12 @@ echo '------------------------ calibre ------------------------------'
     echo '--------------------- fuzzy search ----------------------------'
     yay -S fzf ripgrep
     echo '--------------------- urxvt and perl scripts ----------------------------'
-    yay -Sy rxvt-unicode-256xresources urxvt-clipboard urxvt-font-size-git
+    yay -S rxvt-unicode-256xresources urxvt-clipboard urxvt-font-size-git
 
     ## Need to put it at last, since chsh will interrupt the install process
     echo '--------------------- zsh ----------------------------'
     # Zsh
-    yay -Sy zsh
+    yay -S zsh
     # on my zsh
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ## }
