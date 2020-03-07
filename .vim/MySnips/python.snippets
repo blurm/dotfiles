@@ -1,0 +1,30 @@
+
+# Added By Damon Ma
+snippet p "print" b
+print(${0:${VISUAL:pass}})
+endsnippet
+
+snippet r "return" b
+return ${0}
+endsnippet
+
+snippet p= "formatted comment line with ==="
+print("========================= ${1} =========================")
+${0}
+endsnippet
+
+snippet p- "formatted comment line with ---"
+print("------------------------- ${1} -------------------------")
+${0}
+endsnippet
+
+snippet sl "time.sleep()"
+time.sleep(${1})
+endsnippet
+
+snippet fori "for loop" b
+for i ,key in enumerate(${2:iterable}):
+	${3:${VISUAL:pass}}
+endsnippet
+
+# vim:ft=snippets:
