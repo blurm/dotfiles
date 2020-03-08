@@ -95,13 +95,13 @@ border: 0 0 1 0;
 }
 
 #prompt {
-    padding: 50;
+    padding: 30;
     background-color: @backgroundcoloralternate;
     border: 0 1 0 0;
 }
 
 #entry {
-    padding: 50;
+    padding: 30;
 }
 
 /* vim:ft=css
