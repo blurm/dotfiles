@@ -1,0 +1,57 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	47
+#@/user_id	131f9e85-3816-44b5-9b6f-9864909ad04f
+bei 	被	c=1 d=0.985112 t=47
+bu jia 	不加	c=0 d=0.097531 t=47
+bu jia zai 	不加載	c=1 d=0.980199 t=47
+bu shu 	部署	c=3 d=2.98506 t=47
+cheng xu 	程序	c=1 d=0.985112 t=47
+ci ku 	詞庫	c=1 d=0.995012 t=47
+ci zu 	詞組	c=1 d=0.97531 t=47
+de 	的	c=3 d=2.89757 t=47
+di fang 	地方	c=-1 d=0.0985112 t=47
+diao 	掉	c=0 d=0.0995012 t=47
+dong xi 	東西	c=1 d=0.951229 t=47
+fu gai 	覆蓋	c=0 d=0.0995012 t=47
+fu gai diao 	覆蓋掉	c=1 d=1 t=47
+ge shu 	個數	c=1 d=0.951229 t=47
+guan bi 	關閉	c=1 d=0.995012 t=47
+hou 	後	c=0 d=0.0941765 t=47
+hou xuan ci 	後選詞	c=1 d=0.946485 t=47
+hui 	會	c=1 d=0.980199 t=47
+hui long guan 	回龍觀	c=0 d=0.0995012 t=47
+hui long guan long teng yuan 	回龍觀龍騰苑	c=1 d=1 t=47
+kuai jie 	快捷	c=1 d=0.970446 t=47
+long teng 	龍騰	c=0 d=0.0995012 t=47
+men kou 	門口	c=1 d=0.985112 t=47
+mo ren 	默認	c=1 d=1.06461 t=47
+mo ren she zhi 	默認設置	c=1 d=0.995012 t=47
+mou xie 	某些	c=1 d=0.980199 t=47
+pei zhi 	配置	c=2 d=1.9802 t=47
+pei zhi wen jian 	配置文件	c=1 d=0.985112 t=47
+she zhi 	設置	c=1 d=1.03139 t=47
+shen me 	什麼	c=2 d=2.01057 t=47
+shen me dong xi 	什麼東西	c=1 d=0.960789 t=47
+shi 	是	c=4 d=4.78929 t=47
+shi da fu 	士大夫	c=2 d=1.96431 t=47
+shi da fu shi fou 	士大夫是否	c=1 d=1 t=47
+shi de fen shu 	實得分數	c=0 d=0.0985112 t=47
+shi de fen shu di fang 	實得分數地方	c=1 d=0.99005 t=47
+shi fou 	是否	c=0 d=0.0995012 t=47
+shi shen me 	是什麼	c=1 d=0.97531 t=47
+shu ru 	輸入	c=0 d=0.0995012 t=47
+shui 	誰	c=-1 d=0.970446 t=47
+shuo 	說	c=-1 d=0.97531 t=47
+si kao kan kan 	思考看看	c=-1 d=0 t=47
+xuan ci 	選詞	c=0 d=0.0941765 t=47
+yi si 	意思	c=1 d=1 t=47
+yong hu 	用戶	c=1 d=0.960789 t=47
+yuan 	苑	c=0 d=0.0995012 t=47
+zai 	載	c=0 d=0.097531 t=47
+zhong wen 	中文	c=0 d=0.0995012 t=47
+zhong wen shu ru 	中文輸入	c=1 d=1 t=47
+zi ding yi 	自定義	c=1 d=0.965605 t=47
+zi ji 	自己	c=1 d=0.985112 t=47
