@@ -37,3 +37,4 @@ nm-applet
 # Start picom (compton)
 picom
 #exec $HOME/.config/polybar/launch.sh
+xmodmap ~/.Xmodmap

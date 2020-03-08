@@ -39,7 +39,7 @@
 ## }
 
 ## Internet {
-    echo '----------------- google-chrome -------------------'
+    echo '----------------- google-chrome, chromium -------------------'
     yay -S chromium
 ## }
 
@@ -53,7 +53,7 @@ echo '------------------------ calibre ------------------------------'
     yay -S htop
     #echo '----------------- Input Methods -------------------'
     yay -S fcitx-im fcitx-configtool fcitx-rime
-    yay -S fcitx-qt5 fcitx-skins
+    yay -S fcitx-skins
     #yay -S fcitx-sogoupinyin
 
     # create .xprofile
@@ -150,7 +150,7 @@ echo '------------------------ calibre ------------------------------'
     echo '----------------------- Icon ---------------------------'
     yay -S la-capitaine-icon-theme
     echo '----------------------- Icon Fonts ---------------------------'
-    #yay -S ttf-font-awesome ttf-material-design-icons
+    yay -S otf-font-awesome ttf-material-design-icons ttf-devicons vim-devicons
     yay -S nerd-fonts-complete
     echo '----------------------- powerline ---------------------------'
     yay -S powerline powerline-fonts
@@ -159,6 +159,8 @@ echo '------------------------ calibre ------------------------------'
     yay -S ttf-dejavu otf-mplus ttf-meslo ttf-roboto
     yay -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
     #yay -S adobe-source-han-mono-otc-fonts
+    echo '----------------------- font manager ---------------------------'
+    yay -S font-manager
 ## }
 
 ## Entertainment
@@ -185,7 +187,7 @@ echo '------------------------ calibre ------------------------------'
     echo '----------------- Developing Tools -------------------'
     echo '----------------------- vim ---------------------------'
     # vim doesn't support clipboard
-    yay -S gvim
+    #yay -S gvim
     echo '----------------------- meld ---------------------------'
     # diff tool to comparing files
     yay -S meld
@@ -194,7 +196,7 @@ echo '------------------------ calibre ------------------------------'
 
     # Java
     # Eclipse (will install openjdk automatically)
-    yay -S eclipse
+    #yay -S eclipse
 
     # Python
     #sudo apt -y install phantomjs

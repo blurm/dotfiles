@@ -21,3 +21,6 @@ patch:
         ascii_mode: true
     app_options/urxvt:
         ascii_mode: true
+
+    # 导入词库文件
+    "translator/dictionary": luna_pinyin.computer
