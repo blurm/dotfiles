@@ -26,8 +26,10 @@ feh --bg-fill ~/Pictures/1.jpg
 # Reload .Xresources
 xrdb -load ~/.Xresources
 # Launch polybar
-#polybar -r example
 ~/.config/polybar/launch.sh
+# Launch system tray staff
+fcitx
+nm-applet
 # Change from ugly 'X' cursor when hovering over background
 #xsetroot -cursor_name left_ptr
 # Make betterlockscreen generate and cache a background image for locking

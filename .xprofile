@@ -2,8 +2,7 @@
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
-fcitx
-xmodmap .Xmodmap
+#xmodmap .Xmodmap
 
 # Both i3 and kde/gnome installed, thick i3 using kde/gnome's theme
 #if [[ $DESKTOP_SESSION=~"^i3.*$" ]]; then

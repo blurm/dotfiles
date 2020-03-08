@@ -75,6 +75,9 @@ URxvt.iso14755_52: false
 *background: #282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
+*bg-alt: #504945
+*fg-alt: #7c6f64
+*fg-underline: #fabd2f
 ! Black + DarkGrey
 *color0:  #282828
 *color8:  #928374
