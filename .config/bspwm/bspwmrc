@@ -22,7 +22,7 @@ bspc rule -a Screenkey manage=off
 # ------- Non-BSPWM related ------
 # --------------------------------
 # Set wallpaper
-feh --bg-fill ~/Pictures/1.jpg
+feh --bg-fill ~/myStaff/wallpaper/1.jpg
 # Reload .Xresources
 xrdb -load ~/.Xresources
 # Launch polybar

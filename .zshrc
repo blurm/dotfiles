@@ -161,8 +161,12 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='rg --files --no-ignore --hidden --follow --glob \
     "!{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}*" \
     --null /home/damon/ | xargs -0 dirname | uniq'
+# hl - 匹配输入的字符
+# fg - 未高亮的条目
+# fg+ - 高亮选中的条目
+# pointer - 遍历箭头
 export FZF_DEFAULT_OPTS='
 --reverse --ansi
---color fg:244,bg:237,hl:65,fg+:15,bg+:242,hl+:83
---color info:108,prompt:109,spinner:108,pointer:168,marker:168
+--color fg:248,bg:237,hl:208,fg+:#fbf1c7,bg+:239,hl+:208
+--color info:108,prompt:208,spinner:108,pointer:208,marker:168
 '
