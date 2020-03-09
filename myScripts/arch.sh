@@ -170,6 +170,8 @@ echo '------------------------ calibre ------------------------------'
     #yay -S kodi
 
 ## Photo & Media
+    # echo '----------------------- Screen shot ---------------------------'
+    yay -S flameshot
     # echo '----------------------- Darktable ---------------------------'
     # yay -S darktable
 
