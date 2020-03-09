@@ -243,6 +243,10 @@ echo '------------------------ calibre ------------------------------'
 ## Terminal Tools {
     echo '--------------------- fuzzy search ----------------------------'
     yay -S fzf ripgrep
+
+    echo '--------------------- cheat sheet ----------------------------'
+    yay -S cheat
+
     echo '--------------------- urxvt and perl scripts ----------------------------'
     yay -S rxvt-unicode-256xresources urxvt-clipboard urxvt-font-size-git
 
