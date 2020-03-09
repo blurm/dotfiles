@@ -56,8 +56,8 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-#plugins=(git z extract command-not-found zsh-syntax-highlighting colored-man-pages)
-plugins=(git z extract command-not-found zsh-syntax-highlighting colored-man-pages)
+#plugins=(vi-mode git z extract command-not-found zsh-syntax-highlighting colored-man-pages)
+plugins=(git z.lua extract command-not-found zsh-syntax-highlighting colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
