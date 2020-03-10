@@ -9,8 +9,8 @@ URxvt.inputMethod:fcitx
 !!光标闪烁
 URxvt.cursorBlink:True
 
-URxvt.font:xft:Meslo LG S DZ:antialias=True:pixelsize=22,xft:Source Han Sans CN:pixelsize=22
-URxvt.boldfont:xft:Meslo LG S DZ:antialias=True:pixelsize=22,xft:Source Han Sans CN:pixelsize=22
+URxvt.font:xft:Meslo LG S DZ:antialias=True:pixelsize=22,xft:Source Han Sans CN:pixelsize=22,xft:Font Awesome 5 Free Solid:style=Solid:pixelsize=22
+URxvt.boldfont:xft:Meslo LG S DZ:antialias=True:pixelsize=22,xft:Source Han Sans CN:pixelsize=22,xft:Material Icons:pixelsize=22
 URxvt.letterSpace: -1
 
 URxvt.perl-ext-common: default,font-size,clipboard
