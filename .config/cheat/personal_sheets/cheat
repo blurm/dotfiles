@@ -1,0 +1,20 @@
+# To see example usage of a program:
+cheat <command>
+
+# To edit a cheatsheet
+cheat -e <command>
+
+# To search available cheatsheets
+cheat -s <command>
+
+# To get the current `cheat' version
+cheat -v
+
+#To list all available cheatsheets:
+cheat -l
+
+#To list all cheatsheets that are tagged with "networking":
+cheat -l -t networking
+
+#To list all cheatsheets on the "personal" path:
+cheat -l -p personal
