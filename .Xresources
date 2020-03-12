@@ -10,14 +10,15 @@ URxvt.inputMethod:fcitx
 URxvt.cursorBlink:True
 
 !! Fonts are worked for glyphs
-URxvt.font: xft:MesloLGSDZ Nerd Font Mono:size=12
+!URxvt.font: xft:Input Mono:size=11
+URxvt.font: xft:MesloLGSDZ Nerd Font Mono:size=11, xft:Material Icons:size=12
 !URxvt.font: xft:Inconsolata Nerd Font Mono:size=14, xft:DejaVu Sans:size=12
 !URxvt.font: xft:RobotoMono Nerd Font Mono:size=12, xft:DejaVu Sans:size=12
 !URxvt.font: xft:NotoMono Nerd Font Mono:size=12, xft:DejaVu Sans:size=12
 
 !URxvt.font:xft:Meslo LG S DZ:antialias=True:pixelsize=22,xft:Source Han Sans CN:pixelsize=22,xft:Font Awesome 5 Free Solid:style=Solid:pixelsize=15
 !URxvt.boldfont:xft:Meslo LG S DZ:antialias=True:pixelsize=22,xft:Source Han Sans CN:pixelsize=22,xft:Material Icons:pixelsize=22
-0Rxvt.letterSpace: 0
+0Rxvt.letterSpace: 5
 
 URxvt.perl-ext-common: default,font-size,clipboard
 

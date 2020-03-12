@@ -3,6 +3,8 @@ alias sz="source $HOME/.zshrc"
 alias wd="wd -o"
 alias yays="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
 alias yayr="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rs"
+alias c="cheat"
+alias ce="cheat -e"
 #alias rg="~/mydata/linux\ tools/ripgrep-0.5.2-x86_64-unknown-linux-musl/rg"
 
 # If you come from bash you might have to change your $PATH.

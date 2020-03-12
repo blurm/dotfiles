@@ -44,7 +44,7 @@ if has("nvim")
     " autocomplete for Javascript. Need add .tern-project to take effect
     Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'], 'commit': '9eaedeab499e2d0a34fba72afa1ff65d34752cbf' }
 else
-    Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py -all' }
+    "Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py -all' }
     Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
 endif
     "Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
@@ -336,9 +336,9 @@ let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 "   }
 "   YouCompleteMe {
-    let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-    let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-    let g:SuperTabDefaultCompletionType = '<C-n>'
+    "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+    "let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+    "let g:SuperTabDefaultCompletionType = '<C-n>'
 "   }
 "   UltiSnips {
 " Trigger configuration. Do not use <tab> if you use

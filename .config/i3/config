@@ -39,8 +39,9 @@ font pango:DejaVu Sans Mono 12
 #font pango:DejaVu Sans Mono 8
 
 # thin borders
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 0
 hide_edge_borders        both
+border_radius 10
 
 # hides title
 new_window none
@@ -238,9 +239,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 exec xrandr --output DP1 --dpi 152
 #exec xrandr --output HDMI3 --rotate left
 exec xbindkeys
-#exec --no-startup-id picom --config ~/.config/i3/compton.conf
+exec --no-startup-id picom &
 # Set wallpaper with feh, since the config in unity not work under i3
-# exec --no-startup-id feh --randomize --bg-scale /home/damon/Pictures/wallpapers/*
+ exec --no-startup-id feh --randomize --bg-scale /home/damon/myStaff/wallpaper/*
 # Set wallpaper for different monitors with Nitrogen
 # exec --no-startup-id nitrogen --restore
 
@@ -283,8 +284,8 @@ workspace_auto_back_and_forth yes
 
 # ---------------------------- i3 gap -----------------------------------------------------------------------------------
 # gaps
-gaps inner 5
-gaps outer 0
+gaps inner 10
+gaps outer 10
 smart_gaps on
 # Only enable gaps on a workspace when there is at least one container
 smart_gaps on
@@ -323,4 +324,6 @@ exec --no-startup-id urxvt -n dropdown_cheat -title dropdown_cheat -name dropdow
 bindsym $mod+u [instance="dropdown_term"] scratchpad show; [instance="dropdown_term"] move position center
 bindsym $mod+i [instance="dropdown_cheat"] scratchpad show; [instance="dropdown_cheat"] move position center
 #bindsym $mod+u  scratchpad show
+
+exec $HOME/.config/polybar/launch.sh
 # vim:filetype=i3

@@ -139,3 +139,12 @@ super + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Emulate i3's scratchpad
+# toggle drop-down terminal
+F11
+    bspc node $DDTERMWID --flag hidden --focus $DDTERMWID.!hidden
+#F12
+    #xdotool search --onlyvisible --classname scratchpad windowunmap \
+        #|| ( xdotool search --classname scratchpad windowmap; xdotool search --classname scratchpad windowraise; ) \
+        #|| ( urxvt -name scratchpad -geometry 220x20+400+0; xdotool search --classname scratchpad windowraise; )

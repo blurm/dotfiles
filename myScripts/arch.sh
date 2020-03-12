@@ -76,6 +76,8 @@ echo '------------------------ calibre ------------------------------'
 
     echo '----------------- ranger (file manager)-------------------'
     yay -S ranger
+    # Plugins for ranger
+    git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
     # Dependencies for ranger
     # Syay -S atool mediainfo
     # yay -S xsel
@@ -178,6 +180,8 @@ echo '------------------------ calibre ------------------------------'
 
 
 ## Downloading Tools {
+    echo '----------------------- wget ---------------------------'
+    yay -S wget
     echo '----------------------- uget ---------------------------'
     yay -S uget uget-integrator-chrome
     echo '----------------------- aria2 ---------------------------'
