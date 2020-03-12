@@ -688,6 +688,8 @@ nmap <Leader>y :echo("good")<CR>
 nmap <Leader>yy "+yy
 vmap <Leader>p "+p
 nmap <Leader>p "+p
+nmap <Leader>dd "+dd
+vmap <Leader>d "+d
 
 " Insert a new line without entering insert mode
 "nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
