@@ -5,7 +5,13 @@
 #####################################
 
 
-### 安装软件
+### Add archlinux repo
+echo '[archlinuxcn]' | sudo tee -a /etc/pacman.conf
+echo 'Server = https://repo.archlinuxcn.org/$arch' | sudo tee -a /etc/pacman.conf
+echo 'Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch' | sudo tee -a /etc/pacman.conf
+sudo pacman -Sy archlinuxcn-keyring
+
+### Create the temp dir for git
     mkdir -p ~/git4install
 
 ## Xorg & DM {
