@@ -11,7 +11,7 @@
 ## Xorg & DM {
     sudo pacman -Sy xorg-server xorg-xinit
     sudo pacman -S lightdm lightdm-webkit2-greeter
-    sudo systemctl enable lightdm
+    #sudo systemctl enable lightdm
 ## }
 
 ## Basic Tools {
