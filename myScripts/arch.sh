@@ -152,13 +152,15 @@ echo '------------------------ calibre ------------------------------'
     echo '----------------------- Icon ---------------------------'
     yay -S la-capitaine-icon-theme
     echo '----------------------- Icon Fonts ---------------------------'
-    yay -S otf-font-awesome ttf-material-design-icons ttf-devicons vim-devicons
+    yay -S ttf-material-design-icons ttf-devicons vim-devicons
     yay -S nerd-fonts-complete
     echo '----------------------- powerline ---------------------------'
     yay -S powerline powerline-fonts
     yay -S noto-fonts-emoji
     # font for code or terminal
-    yay -S ttf-dejavu otf-mplus ttf-meslo ttf-roboto
+    yay -S ttf-dejavu otf-mplus ttf-roboto
+    yay -S ttf-input ttf-share-gf ttf-fira-code
+    yay -S ttf-nerd-fonts-input
     yay -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
     #yay -S adobe-source-han-mono-otc-fonts
     echo '----------------------- font manager ---------------------------'
