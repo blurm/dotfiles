@@ -1,0 +1,2 @@
+# picom with double blur
+picom --experimental-backends --backend glx --blur-method dual_kawase --blur-strength 10
