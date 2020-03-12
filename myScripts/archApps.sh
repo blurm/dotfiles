@@ -130,30 +130,26 @@
     #yay -S nodejs-jshint nodejs-tern
 ## }
 
+## Install plugins for Vim {
+    echo '---------------------- vim plugins ---------------------'
+    #cp ~/git4install/myconfigs_temp/{.vimrc,.viminfo} /home/damon
+    mkdir -p ~/.vim/autoload
+    cd ~/.vim/autoload
+    git clone https://github.com/blurm/damonvim.git
+    #vim +PluginInstall +qall
 
-## Developing tools {
-    echo '----------------- Developing Tools -------------------'
-    echo '----------------------- meld ---------------------------'
-    # diff tool to comparing files
-    yay -S meld
-    echo '----------------------- neovim ---------------------------'
-    yay -S neovim
+    #echo '---------------------- YouCompleteMe ---------------------'
+    #cd ~/.vim/bundle/YouCompleteMe
+    #sudo ./install.py
+    #cd ~
 
-    # Java
-    # Eclipse (will install openjdk automatically)
-    #yay -S eclipse
+    #echo '---------------------- ropevim ---------------------'
+    #cd ~/.vim/bundle/ropevim
+    #sudo python setup.py install
+    #cd ~
 
-    # Python
-    #sudo apt -y install phantomjs
-    yay -S python-requests flake8 python-selenium python-beautifulsoup4 python-jedi autopep8 yapf
-    yay -S python2-pyquery python-pyquery
-
-    # nodejs
-    yay -S nodejs npm
-    # Error and problem detecting tool for Vim
-    #sudo npm install -g jshint
-    #sudo npm install -g tern
-    #yay -S nodejs-jshint nodejs-tern
+    #echo '---------------------- ctags for tagbar ---------------------'
+    #sudo apt -y install exuberant-ctags
 ## }
 
 ## Install oh-my-zsh plugin and other terminal tools {
