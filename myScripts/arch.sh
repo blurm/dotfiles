@@ -7,7 +7,6 @@
 
 ### Add archlinux repo
 echo '[archlinuxcn]' | sudo tee -a /etc/pacman.conf
-echo 'Server = https://repo.archlinuxcn.org/$arch' | sudo tee -a /etc/pacman.conf
 echo 'Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch' | sudo tee -a /etc/pacman.conf
 sudo pacman -Sy archlinuxcn-keyring
 
