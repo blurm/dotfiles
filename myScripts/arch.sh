@@ -4,6 +4,8 @@
 # System install script for Arch    #
 #####################################
 
+### Adjust the time, or the request would be rejected by server
+timedatectl set-ntp true
 
 ### Add archlinux repo
 echo '[archlinuxcn]' | sudo tee -a /etc/pacman.conf
