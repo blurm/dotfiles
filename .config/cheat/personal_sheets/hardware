@@ -1,0 +1,2 @@
+# vide card info
+lspci | grep -i vga
