@@ -5,6 +5,7 @@ alias yays="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
 alias yayr="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rs"
 alias c="cheat"
 alias ce="cheat -e"
+
 #alias rg="~/mydata/linux\ tools/ripgrep-0.5.2-x86_64-unknown-linux-musl/rg"
 
 # If you come from bash you might have to change your $PATH.
@@ -61,7 +62,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(vi-mode git z extract command-not-found zsh-syntax-highlighting colored-man-pages)
-plugins=(vi-mode git z.lua extract command-not-found zsh-syntax-highlighting colored-man-pages)
+plugins=(git z.lua extract command-not-found zsh-syntax-highlighting colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

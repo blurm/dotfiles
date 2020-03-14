@@ -18,6 +18,7 @@ sudo pacman -Sy archlinuxcn-keyring
 ## Xorg & DM {
     sudo pacman -Sy xorg-server xorg-xinit
     sudo pacman -S lightdm lightdm-webkit2-greeter
+    sudo pacman -S lightdm-webkit-theme-aether
     #sudo systemctl enable lightdm
 ## }
 
