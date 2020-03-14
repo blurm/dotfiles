@@ -1,2 +1,5 @@
 # picom with double blur
 picom --experimental-backends --backend glx --blur-method dual_kawase --blur-strength 10
+
+# find class name 用十字点一下要查的窗口
+xprop | grep WM_CLASS
