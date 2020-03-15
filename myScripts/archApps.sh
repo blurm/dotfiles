@@ -84,6 +84,9 @@
     #yay -S adobe-source-han-mono-otc-fonts
     echo '----------------------- font manager ---------------------------'
     yay -S font-manager
+
+    echo '----------------------- neofetch ---------------------------'
+    yay -S neofetch
 ## }
 
 

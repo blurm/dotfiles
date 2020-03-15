@@ -47,7 +47,7 @@ nm-applet &
 xmodmap ~/.Xmodmap
 
 # scrachpad init
-st -c scratchtermU &
-bspc rule -a scratchtermU sticky=on state=floating hidden=on rectangle=1000x1000+0+0 center=on
-st -c scratchtermI &
-bspc rule -a scratchtermI sticky=on state=floating hidden=on rectangle=1000x1000+0+0 center=on
+st -c scratchpadU &
+bspc rule -a scratchpadU sticky=on state=floating hidden=on rectangle=1000x1000+0+0 center=on
+st -c scratchpadI &
+bspc rule -a scratchpadI sticky=on state=floating hidden=on rectangle=1000x1000+0+0 center=on
