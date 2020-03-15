@@ -1,0 +1,11 @@
+# change from " to ': "hello world" -> 'hello world'
+cs"'
+
+# to remove the (delimiters)
+ds"
+
+# 选中一个词，比如[hello] (iw is a text orject)
+ysiw[]
+
+# 给一整行添加，
+yssb or yss)

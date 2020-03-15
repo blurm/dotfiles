@@ -1,0 +1,11 @@
+# offical Download address
+git clone https://git.suckless.org/st
+# Luke Smith git address
+git clone https://github.com/LukeSmithxyz/st.git
+
+# font2 patch
+https://st.suckless.org/patches/font2/st-font2-20190416-ba72400.diff
+
+# how to patch
+patch > /path/to/patch
+

@@ -82,6 +82,8 @@
     #yay -S ttf-nerd-fonts-input
     yay -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
     #yay -S adobe-source-han-mono-otc-fonts
+    # display unicode and emoji
+    yay -S symbola
     echo '----------------------- font manager ---------------------------'
     yay -S font-manager
 
