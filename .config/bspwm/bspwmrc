@@ -1,45 +1,29 @@
 #! /bin/sh
 
 # Start picom (compton)
-picom --experimental-backends --backend glx --blur-method dual_kawase --blur-strength 10 &
 
 # border width
-bw=0
 
-# launch drop down terminal if it's not running already
-#ddterm_cmd="st -n ddterm -e tmux new-session -A -s ddterm"
-#if ! pgrep -U ${USER:-$(whoami)} -f "st -n ddterm" >/dev/null; then
-    #bspc rule -a st-256color:ddterm state=floating sticky=on rectangle=1920x588+-$bw+-$bw
-    #$ddterm_cmd &
-    #sleep .1
-    #DDTERMWID="$(bspc query --nodes --node newest.floating.sticky)"
-    #export DDTERMWID
-#fi
-
-## launch sxhkd if it's not running already
-#sxhkd_cmd="sxhkd -c $XDG_CONFIG_HOME/bspwm/sxhkdrc"
-#if ! pgrep -x -f -U ${USER:-$(whoami)} "$sxhkd_cmd" >/dev/null; then
-    #env SXHKD_SHELL=/bin/dash $sxhkd_cmd &
-#fi
-
+picom &
 
 sxhkd &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config normal_border_color "#282828"
-bspc config focused_border_color "#504945"
+bspc config focused_border_color "#928374"
 
-bspc config border_width        $bw
-bspc config border_radius       20
+bspc config border_width        5
+bspc config border_radius       15
 bspc config window_gap          26
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config gapless_monocle      false
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
+#bspc rule -a fcitx-configtool state=floating center=true
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
@@ -53,12 +37,17 @@ feh --bg-fill ~/myStaff/wallpaper/1.jpg
 #xrdb -load ~/.Xresources
 # Launch polybar
 ~/.config/polybar/launch.sh
-# Launch system tray staff
 fcitx
-nm-applet
+nm-applet &
 # Change from ugly 'X' cursor when hovering over background
 #xsetroot -cursor_name left_ptr
 # Make betterlockscreen generate and cache a background image for locking
 #betterlockscreen -u ~/Wallpapers/gruvbox.png
 #exec $HOME/.config/polybar/launch.sh
 xmodmap ~/.Xmodmap
+
+# scrachpad init
+st -c scratchtermU &
+bspc rule -a scratchtermU sticky=on state=floating hidden=on
+st -c scratchtermI &
+bspc rule -a scratchtermI sticky=on state=floating hidden=on

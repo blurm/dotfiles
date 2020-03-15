@@ -2,7 +2,7 @@
 URxvt.scrollBar:False
 URxvt.scrollBar_floating:False
 URxvt.scrollstyle:plain
-URxvt.internalBorder:  20
+URxvt.internalBorder:15
 
 URxvt.inputMethod:fcitx
 

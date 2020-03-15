@@ -112,7 +112,7 @@ endif
     Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'} " Generate table of content
     Plug 'tenfyzhong/tagbar-markdown.vim', {'for': 'markdown'}
     Plug 'dyng/ctrlsf.vim'
-    Plug 'Yggdroot/LeaderF'
+    Plug 'Yggdroot/LeaderF',{'do':'./install.sh'}
     " yajs slow the input down when you type comment
     "Plug 'othree/yajs.vim' " javascript syntax hightlight
     "Plug 'othree/javascript-libraries-syntax.vim'
@@ -171,6 +171,8 @@ map <SPACE> <plug>NERDCommenterToggle
 " }
 " LeaderF {
 let g:Lf_ShortcutF = '<leader>l'
+let g:Lf_WindowPosition = 'popup'
+let g:Lf_PreviewInPopup = 1
 "let g:Lf_PythonVersion=2
 nnoremap <leader>ll :LeaderfSelf<CR>
 nnoremap <leader>c :LeaderfHistoryCmd<CR>
@@ -179,7 +181,7 @@ nnoremap <leader>lf :LeaderfFunction<CR>
 nnoremap <leader>lh :LeaderfHelp<CR>
 nnoremap <leader>lb :LeaderfBuffer<CR>
 nnoremap <leader>lr :LeaderfMru<CR>
-let g:Lf_ExternalCommand = 'rg "%s" --files --no-ignore --hidden --follow --glob !{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}'
+"let g:Lf_ExternalCommand = 'rg "%s" --files --no-ignore --hidden --follow --glob !{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}'
 "let g:Lf_UseVersionControlTool = 0
 "let g:Lf_WildIgnore = {
             "\ 'dir': ['.svn','.git','.hg'],

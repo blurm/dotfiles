@@ -1,0 +1,13 @@
+#!/bin/sh
+#bspc rule -a \* -o state=floating && alacritty
+#urxvt -title scratchpad -name scratchpad
+
+#bspc rule -a scratchpad -o state=floating center=on rectangle=1000x1000+0+0
+#st -c scratchpad
+
+id=$(xdotool search --class scratchtermI)
+
+if [ "$id" != "" ]
+    then
+        bspc node "$id" --flag hidden -f
+fi

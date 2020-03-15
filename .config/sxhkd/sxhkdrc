@@ -130,21 +130,20 @@ super + ctrl + shift + space
 
 # expand a window by moving one of its side outward
 super + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+	bspc node -z {left -50 0,bottom 0 50,top 0 -50,right 50 0}
 
 # contract a window by moving one of its side inward
 super + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+	bspc node -z {right -50 0,top 0 50,bottom 0 -50,left 50 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# Emulate i3's scratchpad
-# toggle drop-down terminal
-F11
-    bspc node $DDTERMWID --flag hidden --focus $DDTERMWID.!hidden
-#F12
-    #xdotool search --onlyvisible --classname scratchpad windowunmap \
-        #|| ( xdotool search --classname scratchpad windowmap; xdotool search --classname scratchpad windowraise; ) \
-        #|| ( urxvt -name scratchpad -geometry 220x20+400+0; xdotool search --classname scratchpad windowraise; )
+alt + u
+    ~/.config/sxhkd/scratchpadu
+
+alt + i
+    ~/.config/sxhkd/scratchpadi
+F12
+    bspc node -f @parent && bspc node --ratio 0.6 && bspc node -f prev.local
