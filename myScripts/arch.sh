@@ -43,6 +43,8 @@ sudo pacman -Sy archlinuxcn-keyring
 
     echo '----------------- unrar -------------------'
     sudo yay -S unrar
+    echo '----------------- unzip -------------------'
+    sudo yay -S unzip
 
 
     # Partition Tools
