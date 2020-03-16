@@ -2,13 +2,17 @@
 # wm independent hotkeys
 #
 
+# application shortkeys
+super + c
+    chromium
+
 # reload polybar
 super + p
     sh ~/.config/polybar/launch.sh
 
 # terminal emulator
 alt + Return
-	urxvt
+    st
 
 # program launcher
 alt + space
@@ -51,8 +55,10 @@ super + g
 #
 
 # set the window state except fullscreen
-alt + {t,shift + t,s}
-	bspc node -t {tiled,pseudo_tiled,floating}
+super + {t,shift + t}
+	bspc node -t {tiled,pseudo_tiled}
+super + s
+    bspc node -t floating
 # fullscreen the window
 alt + f
     bspc node -t \~fullscreen

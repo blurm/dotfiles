@@ -48,6 +48,6 @@ xmodmap ~/.Xmodmap
 
 # scrachpad init
 st -c scratchpadU &
-bspc rule -a scratchpadU sticky=on state=floating hidden=on rectangle=1000x1000+0+0 center=on
+bspc rule -a scratchpadU sticky=on state=floating hidden=on rectangle=1000x1700+0+0 center=on
 st -c scratchpadI &
 bspc rule -a scratchpadI sticky=on state=floating hidden=on rectangle=1000x1000+0+0 center=on

@@ -1,10 +1,4 @@
 # reload non-login shell env
-alias sz="source $HOME/.zshrc"
-alias wd="wd -o"
-alias yays="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
-alias yayr="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rs"
-alias c="cheat"
-alias ce="cheat -e"
 
 #alias rg="~/mydata/linux\ tools/ripgrep-0.5.2-x86_64-unknown-linux-musl/rg"
 
@@ -175,3 +169,16 @@ export FZF_DEFAULT_OPTS='
 --color fg:248,bg:237,hl:208,fg+:#fbf1c7,bg+:239,hl+:208
 --color info:108,prompt:208,spinner:108,pointer:208,marker:168
 '
+
+alias sz="source $HOME/.zshrc"
+alias wd="wd -o"
+alias yays="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
+alias yayr="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rs"
+alias c="cheat"
+alias ce="cheat -e"
+alias t="python ~/git4install/t/t.py --task-dir ~/myStaff/tasks --list tasks"
+alias tf="python ~/git4install/t/t.py --task-dir ~/myStaff/tasks --list tasks -f"
+alias ls="lsd"
+alias la='ls -a'
+alias lla='ls -lAh'
+#alias lt='ls --tree'

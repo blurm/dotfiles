@@ -91,8 +91,11 @@
     yay -S neofetch
 ## }
 
+## Social Network {
+    yay -S telegram-desktop
+## }
+## Entertainment {
 
-## Entertainment
     echo '----------------------- smplayer ---------------------------'
     yay -S smplayer
     #echo '----------------------- kodi ---------------------------'
@@ -108,6 +111,7 @@
     yay -S uget uget-integrator-chrome
     echo '----------------------- aria2 ---------------------------'
     yay -S aria2
+## }
 
 
 ## Developing tools {
@@ -158,6 +162,18 @@
 ## }
 
 ## Install oh-my-zsh plugin and other terminal tools {
+    echo '---------------------- Suckless st ---------------------'
+    cd ~/git4install
+    git clone https://github.com/blurm/st.git
+    cd st
+    sudo make clean install
+
+    echo '---------------------- t - simple todo list ---------------------'
+    cd ~/git4install
+    git clone https://github.com/sjl/t.git
+
+    yay -S lsd
+
     echo '---------------------- zsh-syntax-highlighting ---------------------'
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     echo '---------------------- file path jumping ---------------------'
