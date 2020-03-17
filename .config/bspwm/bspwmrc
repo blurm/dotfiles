@@ -1,10 +1,8 @@
 #! /bin/sh
 
-# Start picom (compton)
+# Clean up everthing
+bspc rule -r "*"
 
-# border width
-
-picom &
 
 sxhkd &
 
@@ -19,7 +17,13 @@ bspc config window_gap          26
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
+# need to be false with dylan's rounded corner patch
 bspc config gapless_monocle      false
+
+bspc config pointer_modifier alt
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
@@ -31,20 +35,27 @@ bspc rule -a Screenkey manage=off
 # --------------------------------
 # ------- Non-BSPWM related ------
 # --------------------------------
-# Set wallpaper
-feh --bg-fill ~/myStaff/wallpaper/1.jpg
-# Reload .Xresources
-#xrdb -load ~/.Xresources
-# Launch polybar
-~/.config/polybar/launch.sh
-fcitx
+
+# -----------------------------------------------
+# ----------------- autostart -------------------
+# -----------------------------------------------
+# Start picom (compton)
+killall "picom"
+picom &
+killall "nm-applet"
 nm-applet &
+feh --bg-fill ~/myStaff/wallpaper/1.jpg &
+killall polybar
+~/.config/polybar/launch.sh &
+killall "fcitx"
+fcitx &
 # Change from ugly 'X' cursor when hovering over background
 #xsetroot -cursor_name left_ptr
 # Make betterlockscreen generate and cache a background image for locking
 #betterlockscreen -u ~/Wallpapers/gruvbox.png
 #exec $HOME/.config/polybar/launch.sh
-xmodmap ~/.Xmodmap
+xrdb -load ~/.Xresources &
+xmodmap ~/.Xmodmap &
 
 # scrachpad init
 st -c scratchpadU &

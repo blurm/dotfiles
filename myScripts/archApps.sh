@@ -71,7 +71,7 @@
     echo '----------------------- Icon ---------------------------'
     yay -S la-capitaine-icon-theme
     echo '----------------------- Icon Fonts ---------------------------'
-    yay -S ttf-material-design-icons ttf-devicons vim-devicons ttf-font-awesome
+    yay -S ttf-material-design-icons ttf-devicons vim-devicons ttf-font-awesome ttf-weather-icons
     yay -S nerd-fonts-complete
     echo '----------------------- powerline ---------------------------'
     yay -S powerline powerline-fonts
@@ -89,6 +89,8 @@
 
     echo '----------------------- neofetch ---------------------------'
     yay -S neofetch
+    echo '----------------------- jq - polybar weather module ---------------------------'
+    yay -S jq
 ## }
 
 ## Social Network {
@@ -171,6 +173,7 @@
     echo '---------------------- t - simple todo list ---------------------'
     cd ~/git4install
     git clone https://github.com/sjl/t.git
+    yay -S todoist
 
     yay -S lsd
 

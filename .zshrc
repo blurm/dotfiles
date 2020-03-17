@@ -71,7 +71,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(vi-mode git z extract command-not-found zsh-syntax-highlighting colored-man-pages)
-plugins=(git z.lua extract command-not-found zsh-syntax-highlighting colored-man-pages)
+plugins=(colorize git z.lua extract command-not-found zsh-syntax-highlighting colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -184,7 +184,7 @@ export FZF_DEFAULT_OPTS='
 --color fg:248,bg:237,hl:208,fg+:#fbf1c7,bg+:239,hl+:208
 --color info:108,prompt:208,spinner:108,pointer:208,marker:168
 '
-
+#### customized alias
 alias sz="source $HOME/.zshrc"
 alias wd="wd -o"
 alias yays="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
@@ -197,6 +197,7 @@ alias ls="lsd"
 alias la='ls -a'
 alias lla='ls -lAh'
 #alias lt='ls --tree'
+alias td='todoist --color --csv'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

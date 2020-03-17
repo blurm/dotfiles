@@ -1,6 +1,9 @@
 Add t install to archapp.sh | id:1c63c927c844ffd83feec328acc010294e3ff521
+add thermal module on polybar | id:396c538a6b98379572043c040b67f261df7efe98
 test twoo | id:7946cb7d83c5ba240d49c48b7ebe918fc11f73f5
+add weather module to polybar | id:7fe99a808b7b71f3f4a5313f7326d04d2746c7c4
 7 | id:902ba3cda1883801594b6e1b452790cc53948fda
+git add myStaff/tasks | id:9ad6f8338d4f1751b374bb13138fb7332d6de33f
 install lsd for ls icon | id:a51d088d11c2b8f2f3418dbf12b72c913187e33c
 test | id:a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 powerline10k or spaceline? | id:cd5c7c70fe8ada7686441d325d0f480457b19230

@@ -3,3 +3,47 @@ tags: [ wm ]
 ---
 # focus the next/previous node in the current desktop
 alt + {_,shift + }c
+
+# bspc command
+bspc DOMAIN [SELECTOR] COMMANDS
+DOMAIN=[node|desktop|monitor]
+
+# node select
+NODE_SEL := [NODE_SEL#](DIR|CYCLE_DIR|PATH|any|last|newest|
+        older|newer|focused|pointed|biggest|smallest|
+        <node_id>)[.[!]focused][.[!]active][.[!]automatic][.[!]local]
+[.[!]leaf][.[!]window][.[!]STATE][.[!]FLAG][.[!]LAYER]
+[.[!]same_class][.[!]descendant_of][.[!]ancestor_of]
+e.g. bspc (north|@brother/first|any|focused|<node_id>).([!]focused|local|tiled|floating|fullscreen|hidden|sticky)
+
+PATH = @[DESKTOP_SEL:][[/]JUMP](/JUMP)*
+JUMP = fisrt|1second|2|brother|parent|DIR(north|east)
+
+# Send the selected node on the given node. If --follow is passed, the focused node will stay focused
+-n, --to-node NODE_SEL
+
+# set the state of the selected window.
+-t, --state [~](tiled|pseudo_tiled|floating|fullscreen)
+
+-g, --flag hidden|sticky|private|locked|marked|[=on|off]
+# 设置当前node的兄弟node为隐藏
+e.g. bspc node @brother -g hidden=on
+
+
+# Rule
+# General Syntax
+rule COMMANDS
+
+# Commands
+# Create a new rule.
+-a, --add (<class_name>|*)[:(<instance_name>|*)] [-o|--one-shot] [monitor=MONITOR_SEL|desktop=DESKTOP_SEL|node=NODE_SEL]
+[state=STATE] [layer=LAYER] [split_dir=DIR] [split_ratio=RATIO]
+[(hidden|sticky|private|locked|marked|center|follow|manage|focus|border)=(on|off)] [rectangle=WxH+X+Y]
+
+# e.g.
+# st运行在悬浮窗口模式，并且固定（切换destop也不会变）
+# -o 只运行一次。因为rule只需要创建一次就够了
+bspc rule -a st-256color -o state=floating rectangle=800x500+100+100 sticky=on
+
+# Query to list only active desktops
+bspc query -D -d .occupied --names
