@@ -3,7 +3,7 @@
 #
 
 # application shortkeys
-super + c
+alt + c
     chromium
 
 # reload polybar

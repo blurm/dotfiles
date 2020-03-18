@@ -9,3 +9,6 @@ ysiw[]
 
 # 给一整行添加，
 yssb or yss)
+
+# visual mode 下添加“
+S"

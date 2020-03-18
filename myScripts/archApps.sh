@@ -2,6 +2,7 @@
     ## Internet {
     echo '----------------- google-chrome, chromium -------------------'
     yay -S chromium
+    yay -S google-chrome
     ## }
 
     echo '------------------------ calibre ------------------------------'
@@ -38,7 +39,6 @@
     #sensors
     echo '----------------- psensor -------------------'
     yay -S psensor
-
 
     # Logitech mouse
     echo '----------------- xbindkeys -------------------'

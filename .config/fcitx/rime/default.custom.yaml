@@ -31,5 +31,6 @@ patch:
         Control_R: noop
         # 左右Shift上屏编码并切换为英文状态，
         # inline_ascii 设定在有输入时不能切换至英文状态
+        # 注意！！需要关闭fxcit的shift切换输入法快捷键
         Shift_L: commit_code
         Shift_R: commit_code #

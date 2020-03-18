@@ -44,7 +44,7 @@ if has("nvim")
     " autocomplete for Javascript. Need add .tern-project to take effect
     Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'], 'commit': '9eaedeab499e2d0a34fba72afa1ff65d34752cbf' }
 else
-    "Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py -all' }
+    Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --all' }
     Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
 endif
     "Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
@@ -173,6 +173,9 @@ map <SPACE> <plug>NERDCommenterToggle
 let g:Lf_ShortcutF = '<leader>l'
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
+let g:Lf_ShowHidden = 1
+"let g:Lf_UseVersionControlTool = 0
+"let g:Lf_UseCache = 0
 "let g:Lf_PythonVersion=2
 nnoremap <leader>ll :LeaderfSelf<CR>
 nnoremap <leader>c :LeaderfHistoryCmd<CR>
@@ -181,6 +184,7 @@ nnoremap <leader>lf :LeaderfFunction<CR>
 nnoremap <leader>lh :LeaderfHelp<CR>
 nnoremap <leader>lb :LeaderfBuffer<CR>
 nnoremap <leader>lr :LeaderfMru<CR>
+
 "let g:Lf_ExternalCommand = 'rg "%s" --files --no-ignore --hidden --follow --glob !{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}'
 "let g:Lf_UseVersionControlTool = 0
 "let g:Lf_WildIgnore = {
@@ -203,7 +207,7 @@ nmap - <Plug>(choosewin)
 nnoremap <leader>pi :PlugInstall<CR>
 nnoremap <leader>pc :PlugClean<CR>
 " }
-" vim-quickrun {
+" vim- 2qq::ququickrun {
 nnoremap <leader>qr :QuickRun<CR>
 " }
 "   ale {
@@ -439,7 +443,7 @@ autocmd FileType python
             \ noremap <silent> <buffer> <C-]> :RopeGotoDefinition<CR>
 " }
 "   Gundo {
-nnoremap <F5> :GundoToggle<CR>
+"nnoremap <F5> :GundoToggle<CR>
 "   }
 "   Tagbar {
 nnoremap <F8> :TagbarToggle<CR>

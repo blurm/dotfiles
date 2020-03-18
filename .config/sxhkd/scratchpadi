@@ -10,4 +10,6 @@ id=$(xdotool search --class scratchpadI)
 if [ "$id" != "" ]
     then
         bspc node "$id" --flag hidden -f
+    else
+        st -c scratchpadI &
 fi
