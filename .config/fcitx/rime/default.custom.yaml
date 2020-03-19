@@ -1,29 +1,22 @@
+# default.custom.yaml
+# save it to:
+#   ~/.config/ibus/rime  (linux)
+#   ~/Library/Rime       (macos)
+#   %APPDATA%\Rime       (windows)
+
 patch:
-    "style/font_face": "明兰"  # 字體名稱，從記事本等處的系統字體對話框裏能看到
-    "style/font_point": 14     # 字號，只認數字的，不認「五號」、「小五」這樣的
-    # 会被fcitx的默认设置覆盖掉
-    "style/horizontal": false      # 候選橫排
-    "style/inline_preedit": true  # 內嵌編碼（僅支持TSF）
-    "style/display_tray_icon": true  # 顯示托盤圖標
-
-    # 后选词个数设置
+    schema_list:
+        - schema: luna_pinyin          # 朙月拼音
+        - schema: double_pinyin        # 自然碼雙拼
     "menu/page_size": 9
-
-    # 用户自定义快捷词组
-    recognizer/patterns/reverse_lookup:
-    'punctuator/half_shape/`':
-        - 'blurm'
-        - 'blurm@126.com'
-        - 'damon.ma.iphone@gmail.com'
 
     # 某些程序默认关闭中文输入
     app_options/vim:  # 程序名字全用小寫字母
-        ascii_mode: true
+    ascii_mode: true
     app_options/urxvt:
-        ascii_mode: true
-
-    # 导入词库文件
-    "translator/dictionary": luna_pinyin.computer
+    ascii_mode: true
+    app_options/st:
+    ascii_mode: true
 
     "ascii_composer/switch_key":
         Caps_Lock: commit_code
