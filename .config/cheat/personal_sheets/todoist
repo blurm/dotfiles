@@ -1,0 +1,14 @@
+# When run todoist first time, will be asked API token
+todoist sync
+
+# show all tasks
+todoist l
+
+# add task
+todoist a
+
+# close task
+todoist c
+
+# global options:
+--color

@@ -1,0 +1,19 @@
+# 在给定目录下搜索字符串
+sudo rg "lightdm-webkit2-greeter" /etc/
+
+# 只用字符串而不是正则来搜索
+rg -F 'function write(' /filepath/
+
+# 搜索隐藏文件以及隐藏文件夹
+rg -F 'state=floating' --hidden
+
+--no-ignore # disable .gitignore handling
+
+# -g glob 只在toml文件下搜索
+rg clap -g '*.toml'
+# 在除了toml文件的其他文件里搜索
+rg clap -g '!*.toml'
+
+--files # Print the files that ripgrep would search, but don't actually search them.
+
+rg "keyword" --files --no-ignore --hidden --follow --glob !{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}

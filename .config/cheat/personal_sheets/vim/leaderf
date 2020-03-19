@@ -1,0 +1,5 @@
+# open in vertical split window
+<C-]>
+
+# open in horizontal split window
+<C-X>
