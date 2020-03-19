@@ -63,12 +63,16 @@ sudo pacman -Sy archlinuxcn-keyring
 
     #echo '----------------------- bspwm ---------------------------'
     yay -Sy bspwm sxhkd
+    # for scratchpad floating
+    yay -S xdotool
 
     # polybar - status bar tools
     echo '----------------------- polybar ---------------------------'
     yay -S polybar
     yay -S alsa-utils
     yay -S network-manager-applet
+    # for json parsing. Used by weather and pm2.5 module
+    yay -S jq
 
 
     echo '----------------------- rofi ---------------------------'
