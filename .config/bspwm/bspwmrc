@@ -31,6 +31,7 @@ bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+# Saladict popup window
 bspc rule -a Chromium:crx_cdonnmffkdaoajfknoeeecmchibpmkmg state=floating
 bspc rule -a Google-chrome:crx_cdonnmffkdaoajfknoeeecmchibpmkmg state=floating
 #bspc rule -a Chromium:chromium state=floating
@@ -48,7 +49,7 @@ killall "picom"
 picom &
 killall "nm-applet"
 nm-applet &
-feh --bg-fill ~/myStaff/wallpaper/1.jpg &
+feh --bg-fill ~/myStaff/wallpaper/2.jpg &
 killall polybar
 ~/.config/polybar/launch.sh &
 killall "fcitx"
