@@ -39,15 +39,16 @@ if loadPlug == 1
     Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'} " autocomplete for Java
     "autocmd FileType java setlocal omnifunc=javacomplete#Complete
 if has("nvim")
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'zchee/deoplete-jedi', {'for': 'python'} " autocomplete for Python
+    "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    "Plug 'zchee/deoplete-jedi', {'for': 'python'} " autocomplete for Python
     " autocomplete for Javascript. Need add .tern-project to take effect
-    Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'], 'commit': '9eaedeab499e2d0a34fba72afa1ff65d34752cbf' }
+    "Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'], 'commit': '9eaedeab499e2d0a34fba72afa1ff65d34752cbf' }
 else
-    Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --all' }
+    "Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --all' }
     Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
 endif
     "Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
 
@@ -102,7 +103,9 @@ endif
     Plug 'PotatoesMaster/i3-vim-syntax', {'for': 'i3'} " Highlighting for i3wm config
     Plug 'dhruvasagar/vim-table-mode'
     Plug 'thinca/vim-quickrun'
-    Plug 'ap/vim-css-color'
+    Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+    let g:Hexokinase_highlighters = [ 'backgroundfull' ]
+    "Plug 'ap/vim-css-color'
     "Displays function signatures from completions in the command line
     "Plug 'Shougo/echodoc.vim'
     "let g:echodoc_enable_at_startup = 1
@@ -284,40 +287,40 @@ let g:autoformat_verbosemode=1
 let g:session_default_to_last = 1
 "   }
 "   deoplete {
-if has("nvim") && loadDeoplete == 1
-    let g:deoplete#enable_at_startup = 1
-    let g:deoplete#enable_ignore_case = 1
-    let g:deoplete#enable_smart_case = 1
+"if has("nvim") && loadDeoplete == 1
+    "let g:deoplete#enable_at_startup = 1
+    "let g:deoplete#enable_ignore_case = 1
+    "let g:deoplete#enable_smart_case = 1
 
-    "let g:deoplete#omni#functions = {}
-    "let g:deoplete#omni#functions.javascript = [
-                "\ 'tern#Complete',
-                "\ 'jspc#omni'
-                "\]
+    ""let g:deoplete#omni#functions = {}
+    ""let g:deoplete#omni#functions.javascript = [
+                ""\ 'tern#Complete',
+                ""\ 'jspc#omni'
+                ""\]
 
-    if exists('g:deoplete#enable_at_startup')
-        let g:deoplete#enable_at_startup = 1
-        call deoplete#custom#set('buffer', 'mark', 'ℬ')
-        call deoplete#custom#set('ternjs', 'mark', '')
-        call deoplete#custom#set('omni', 'mark', '⌾')
-        call deoplete#custom#set('file', 'mark', 'file')
-        call deoplete#custom#set('jedi', 'mark', '')
-        call deoplete#custom#set('javacomplete2', 'mark', '')
-        call deoplete#custom#set('typescript', 'mark', '')
-        call deoplete#custom#set('ultisnips', 'mark', '')
-    endif
-    " Set bin if you have many instalations
-    let g:deoplete#sources#ternjs#tern_bin = '/usr/bin/tern'
+    "if exists('g:deoplete#enable_at_startup')
+        "let g:deoplete#enable_at_startup = 1
+        "call deoplete#custom#set('buffer', 'mark', 'ℬ')
+        "call deoplete#custom#set('ternjs', 'mark', '')
+        "call deoplete#custom#set('omni', 'mark', '⌾')
+        "call deoplete#custom#set('file', 'mark', 'file')
+        "call deoplete#custom#set('jedi', 'mark', '')
+        "call deoplete#custom#set('javacomplete2', 'mark', '')
+        "call deoplete#custom#set('typescript', 'mark', '')
+        "call deoplete#custom#set('ultisnips', 'mark', '')
+    "endif
+    "" Set bin if you have many instalations
+    "let g:deoplete#sources#ternjs#tern_bin = '/usr/bin/tern'
 
-    "let g:deoplete#enable_profile = 1
-    "call deoplete#enable_logging('DEBUG', 'deoplete.log')
-    "call deoplete#custom#source('tern', 'debug_enabled', 1)
+    ""let g:deoplete#enable_profile = 1
+    ""call deoplete#enable_logging('DEBUG', 'deoplete.log')
+    ""call deoplete#custom#source('tern', 'debug_enabled', 1)
 
-    " Use tern_for_vim.
-    let g:tern_show_argument_hints='on_move'
-    let g:tern#command = ["tern"]
-    let g:tern#arguments = ["--persistent"]
-endif
+    "" Use tern_for_vim.
+    "let g:tern_show_argument_hints='on_move'
+    "let g:tern#command = ["tern"]
+    "let g:tern#arguments = ["--persistent"]
+"endif
 "   }
 "   vim-session {
 nnoremap <Leader>os :OpenSession<CR>
@@ -536,7 +539,7 @@ set colorcolumn=80 " 80个字符的限制
 "let g:solarized_visibility="normal"
 
 " 256 colors setting for nvim
-"set termguicolors
+set termguicolors
 set t_Co=256
 "let &t_8f = "[38;2;%lu;%lu;%lum"
 "let &t_8b = "[48;2;%lu;%lu;%lum"
@@ -548,8 +551,8 @@ silent! colorscheme gruvbox
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
 "if !has("nvim")
-"set cursorline " Highlight current line
-"hi CursorLine term=bold cterm=bold guibg=#504945
+set cursorline " Highlight current line
+hi CursorLine term=bold cterm=bold guibg=#3C3836
 "endif
 
 if has('cmdline_info')

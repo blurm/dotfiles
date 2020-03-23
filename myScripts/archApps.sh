@@ -25,7 +25,13 @@
     # Plugins for ranger
     git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
     # Dependencies for ranger
-    # Syay -S atool mediainfo
+    # image preview
+    yay -S python-ueberzug
+    # compress, extract and video info preview
+    yay -S atool mediainfo
+    # source code highlight
+    yay -S highlight
+    yay -S zip unzip
     # yay -S xsel
 
     #echo '----------------- minidlna -------------------'
@@ -123,6 +129,8 @@
     yay -S meld
     echo '----------------------- neovim ---------------------------'
     yay -S neovim
+    yay -S python-pynvim
+    yay -S python2-pynvim
 
     # Java
     # Eclipse (will install openjdk automatically)

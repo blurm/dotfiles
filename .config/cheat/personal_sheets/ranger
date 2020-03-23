@@ -1,0 +1,40 @@
+X open rc.conf with nvim
+W # open the log window where can review messages that pop up at bottom
+w # open task window. 可以查看当前正在运行的后台进程，比如拷贝
+<C-c> stop the currently running background process, like copying files
+
+yy # copy the selection. ("ya" to add files to the copy buffer, "yr" to remove files again, "yt" for toggling)
+
+zh # set show hidden!
+uv # unset the file selection
+
+####### shell command
+S # open a shell in the current directory
+! # 快速执行shell命令
+@ # 对当前选择的文件快速执行shell命令
+
+####### tab related
+gn, <C+n> # create a new tab
+gc # close tab
+
+####### Order by
+oS # size reverse
+oM # mtime reverse
+
+dc # 得到文件夹的累计大小
+vdcv # 显示当前目录下的所有文件夹大小
+
+MH # linemode:size human readable, mtime
+
+####### bookmark
+um<key> # unset any bookmarks
+
+####### Change the permissions of the selection.
+<octal>=, +<who><what>, -<who><what>
+777= # is equivalent to chmod 777 %s, 
++ar # does chmod a+r %s,
+-ow # does chmod o-w %s etc.
+
+####### chmod
++u{rwx} # 文件拥有者权限增加
+-a{rwx} # 所有用户权限限制

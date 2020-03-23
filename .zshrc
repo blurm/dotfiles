@@ -5,16 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# reload non-login shell env
-alias sz="source $HOME/.zshrc"
-alias wd="wd -o"
-alias yays="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
-alias yayr="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rs"
-alias c="cheat"
-alias ce="cheat -e"
-#alias t='python ~/git4install/t/t.py --task-dir ~/git4install/t --list tasks'
-alias t='python ~/git4install/t/t.py --task-dir ~/git4install/t '
-
 #alias rg="~/mydata/linux\ tools/ripgrep-0.5.2-x86_64-unknown-linux-musl/rg"
 
 # If you come from bash you might have to change your $PATH.
@@ -83,7 +73,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   export EDITOR='nvim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -198,6 +188,7 @@ alias la='ls -a'
 alias lla='ls -lAh'
 #alias lt='ls --tree'
 alias td='todoist --color --csv'
+alias ra='ranger'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

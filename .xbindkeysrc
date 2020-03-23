@@ -2,10 +2,30 @@
 #
 # MX Master Settings #
 ######################
-# thumb wheel up => increase volume
-"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+# Codes for buttons
+# b:1: left button
+# b:2: mid button (scroll wheel clicked down)
+# b:3: right button
+# b:4: scroll up
+# b:5: scroll down
+# b:6: scroll wheel tilt left
+# b:7: scroll wheel tilt right
+# b:8: back button
+# b:9: forward button
+# b:10 Thumb button Ctrl+Alt+Tab
+# b:11 No detected by xbindkeys
+
+# button 2 to mute
+"amixer set Master mute"
+b:2
+
+# thumb wheel up => increase volume and unmute
+"amixer set Master 5%+ unmute"
 b:6
 
 # thumb wheel down => lower volume
-"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+"amixer set Master 5%-"
 b:7
+
+# no need to map  back and forward button, default set
+#

@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 KEY="f7794aaec722177e432098bfc06c29b51c4114bd"
 CITY="beijing"
 API_URL="https://api.waqi.info/feed/"
