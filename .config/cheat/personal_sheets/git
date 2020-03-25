@@ -6,6 +6,15 @@ git fetch --all
 git reset --hard origin/master
 git pull
 
+# 从git中移除文件，并从工作目录删除
+git rm
+# 从git中移除，但是保留工作目录的文件
+git rm --cached filename
+# 从缓存区中取消修改
+git reset HEAD filename
+# 撤销修改，覆盖当前文件，危险命令
+git checkout -- filename
+
 # To set your identity:
 git config --global user.name <name>
 git config --global user.email <email>

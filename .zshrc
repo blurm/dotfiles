@@ -189,6 +189,11 @@ alias lla='ls -lAh'
 #alias lt='ls --tree'
 alias td='todoist --color --csv'
 alias ra='ranger'
+alias vim='nvim'
+alias scstart='sudo systemctl start'
+alias scstop='sudo systemctl stop'
+alias scstatus='sudo systemctl status'
+alias scenable='sudo systemctl enable'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
