@@ -188,6 +188,21 @@ nnoremap <leader>lh :LeaderfHelp<CR>
 nnoremap <leader>lb :LeaderfBuffer<CR>
 nnoremap <leader>lr :LeaderfMru<CR>
 
+
+let g:Lf_PopupPalette = {
+            \  'dark': {
+            \      'Lf_hl_cursorline': {
+            \                'gui': 'NONE',
+            \                'font': 'NONE',
+            \                'guifg': '#fabd2f',
+            \                'guibg': 'NONE',
+            \                'cterm': 'NONE',
+            \                'ctermfg': 'NONE',
+            \                'ctermbg': '236'
+            \              },
+            \      }
+            \  }
+
 "let g:Lf_ExternalCommand = 'rg "%s" --files --no-ignore --hidden --follow --glob !{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}'
 "let g:Lf_UseVersionControlTool = 0
 "let g:Lf_WildIgnore = {

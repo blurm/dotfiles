@@ -11,6 +11,8 @@
 
 ## System tools {
     echo '----------------- System Tools -------------------'
+    echo '----------------- bluetooth ----------------------'
+    yay -S bluez bluez-utils
     echo '----------------- htop -------------------'
     yay -S htop
     #echo '----------------- Input Methods -------------------'

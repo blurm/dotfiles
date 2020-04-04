@@ -16,7 +16,7 @@ if [ -n "$data" ]; then
         else
             result=$pm25
         fi
-        echo "  $result"
+        echo "$result"
     else
         result=""
     fi
