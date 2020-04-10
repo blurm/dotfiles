@@ -13,6 +13,8 @@
     echo '----------------- System Tools -------------------'
     echo '----------------- bluetooth ----------------------'
     yay -S bluez bluez-utils
+    echo '----------------- ios,iphone,ipad ----------------------'
+    yay -S ifuse usbmuxd libplist
     echo '----------------- htop -------------------'
     yay -S htop
     #echo '----------------- Input Methods -------------------'
