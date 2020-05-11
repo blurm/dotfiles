@@ -49,7 +49,7 @@ killall "picom"
 picom &
 killall "nm-applet"
 nm-applet &
-feh --bg-fill ~/myStaff/wallpaper/1.jpg &
+feh --bg-fill ~/myStaff/wallpaper/robinwall.png &
 killall polybar
 ~/.config/polybar/launch.sh &
 killall "fcitx"
