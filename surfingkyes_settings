@@ -15,6 +15,9 @@ settings.theme = `
 .sk_theme .url {
     color: #98971a;
 }
+.sk_theme .title {
+    padding-left: 10px;
+}
 .sk_theme .annotation {
     color: #b16286;
 }
