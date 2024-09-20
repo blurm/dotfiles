@@ -9,6 +9,7 @@ settings.theme = `
 .sk_theme tbody {
     color: #b8bb26;
 }
+
 .sk_theme input {
     color: #fe8019;
 }
@@ -17,6 +18,9 @@ settings.theme = `
 }
 .sk_theme li {
     padding: 5px 10px;
+}
+.sk_theme ul {
+    margin: 0px 0px;
 }
 .sk_theme .annotation {
     color: #b16286;
@@ -28,7 +32,30 @@ settings.theme = `
     color: #458588;
 }
 .sk_theme .omnibar_timestamp {
-    color: #689d6a;
+    color: #b16286;
+}
+.sk_theme #sk_omnibarSearchArea {
+    background: #282828;
+    margin: 0 0;
+    border-bottom: 1px solid #3c3836;
+}
+.sk_theme #sk_omnibarSearchArea .prompt {
+    background: #d65d0e;
+    padding: 17px 17px;
+    border-bottom: 0px solid #3c3836;
+    color: #ebdbb2
+}
+#sk_omnibar {
+    border-radius: 6px;
+}
+.sk_theme .separator {
+    padding: 0 0 0 5px;
+    color: #ebdbb2
+}
+
+.sk_theme .resultPage {
+    color: #504945;
+    padding: 17px 17px;
 }
 .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
     background: #282828;
@@ -37,11 +64,11 @@ settings.theme = `
     margin: 0 0;
 }
 .sk_theme #sk_omnibarSearchResult ul li {
-    padding: 5px 15px;
+    padding: 10px 15px;
 }
 
 .sk_theme #sk_omnibarSearchResult ul li.focused {
-    background: #665c54;
+    background: #3c3836;
 }
 #sk_status, #sk_find {
     font-size: 20pt;
