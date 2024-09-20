@@ -19,7 +19,13 @@ settings.theme = `
     color: #b16286;
 }
 .sk_theme .omnibar_highlight {
-    color: #d65d0e;
+    color: #fe8019;
+}
+.sk_theme .omnibar_folder {
+    color: #458588;
+}
+.sk_theme .omnibar_timestamp {
+    color: #689d6a;
 }
 .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
     background: #282828;
