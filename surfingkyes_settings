@@ -1,3 +1,30 @@
+const {
+    aceVimMap,
+    mapkey,
+    imap,
+    imapkey,
+    getClickableElements,
+    vmapkey,
+    map,
+    unmap,
+    cmap,
+    addSearchAlias,
+    removeSearchAlias,
+    tabOpenLink,
+    readText,
+    Clipboard,
+    Front,
+    Hints,
+    Visual,
+    RUNTIME
+} = api;
+
+
+settings.focusFirstCandidate = true;
+settings.modeAfterYank = 'Normal';
+
+mapkey('gF', '#12Open Chrome Flags', () => { tabOpenLink("https://chatgpt.com/"); });
+
 // scroll half page up
 api.map('s', 'e');
 // close all tabs except current one
