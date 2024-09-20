@@ -1,3 +1,78 @@
+// scroll half page up
+api.map('s', 'e');
+// close all tabs except current one
+api.map('ca', 'gxx');
+// close tabs on right side
+api.map('cr', 'gx$');
+// close tabs on leftside
+api.map('cl', 'gx0');
+
+api.addSearchAlias('b', 'bilibili', 'https://search.bilibili.com/all?keyword=');
+api.addSearchAlias('z', '知乎', 'https://www.zhihu.com/search?type=content&q=','s',
+  'https://www.zhihu.com/api/v4/search/suggest?q=',
+  (res)=>{
+    res=JSON.parse(res.text)
+    return res.suggest.map(x=>x.query);
+  }
+);
+api.addSearchAlias('g', 'github搜索', 'https://github.com/search?q=','s',
+  'https://api.github.com/search/repositories?q=',
+  (res)=>{
+    console.log(res)
+    res=JSON.parse(res.text)
+    res=res.items.map(x=>({html:`
+    <div>
+      <span style="color:#d79921;margin-bottom:10px;">★ ${x.stargazers_count}</span>
+      <span style="font-size:15px;font-weight:bold;">${x.name}</span>
+      <span style="color:#98971a">${x.description}</span>
+    </div>`
+    ,props:{url:x.html_url} }))
+    return res;
+
+  }
+);
+api.addSearchAlias('o', '谷歌搜索', 'https://www.google.com/search?q=','s',
+  'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=',
+  (res)=>JSON.parse(res.text)[1]
+);
+api.addSearchAlias(
+  'tb',
+  'taobao',
+  'https://s.taobao.com/search?q=',
+  's',
+  'https://suggest.taobao.com/sug?code=utf-9&q=',
+  (response)=> {
+    var res = []
+    console.log(response)
+    try {
+      res = JSON.parse(response.text).result.map(function (it) {
+        return it[-1]
+      })
+    } catch (e) {}
+    console.log(res)
+    res=res.map(x=>`<span style="color:red;">${x}</span>`)
+    return res
+  },
+  'o'
+);
+
+/*
+api.addSearchAlias(
+  'w',
+  '微信小程序',
+  'https://developers.weixin.qq.com/doc/search.html?source=enter&doc_type=miniprogram&jumpbackUrl=%1Fdoc%2F&query=',
+  's',
+  'https://developers.weixin.qq.com/search?action=wxa_search&size=9&page=1&language=1&type=wxadoc&doc_type=miniprogram&query=',
+  (response)=> {
+    let res = []
+    let obj = JSON.parse(response.text)
+    res=obj.doc_item_list.item_list.map(x=>({html:`<div><span style="font-size:15px;font-weight:bold;">${x.title}</span> <span style="color:#666666">${x.content}</span></div>`,props:{url:x.url} }))
+    return res
+  },
+  'o'
+);
+*/
+
 /* set theme */
 settings.theme = `
 .sk_theme {
