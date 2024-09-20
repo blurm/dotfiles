@@ -25,7 +25,7 @@ settings.theme = `
     background: #282828;
 }
 .sk_theme #sk_omnibarSearchResult ul li.focused {
-    background: #d3869b;
+    background: #665c54;
 }
 #sk_status, #sk_find {
     font-size: 20pt;
