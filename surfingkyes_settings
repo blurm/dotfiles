@@ -26,23 +26,35 @@ settings.modeAfterYank = 'Normal';
 mapkey('gF', '#12Open Chrome Flags', () => { tabOpenLink("https://chatgpt.com/"); });
 
 // scroll half page up
-api.map('s', 'e');
+map('s', 'e');
 // close all tabs except current one
-api.map('ca', 'gxx');
+map('ca', 'gxx');
 // close tabs on right side
-api.map('cr', 'gx$');
+map('cr', 'gx$');
 // close tabs on leftside
-api.map('cl', 'gx0');
+map('cl', 'gx0');
+// Go to the last tab
+map('<Ctrl-0>','g$');
 
-api.addSearchAlias('b', 'bilibili', 'https://search.bilibili.com/all?keyword=');
-api.addSearchAlias('z', '知乎', 'https://www.zhihu.com/search?type=content&q=','s',
+unmap('O');
+map('ss', 'oo');
+unmap('oo');
+unmap('gc')
+map('<SPACE>', 'ChatGPT', function() {
+    tabOpenLink("https://www.google.com/");
+});
+
+addSearchAlias('j', 'JD', 'https://search.jd.com/Search?keyword=');
+addSearchAlias('b', 'bilibili', 'https://search.bilibili.com/all?keyword=');
+addSearchAlias('r', 'Reddit', 'https://www.reddit.com/search/?q=');
+addSearchAlias('z', '知乎', 'https://www.zhihu.com/search?type=content&q=','s',
   'https://www.zhihu.com/api/v4/search/suggest?q=',
   (res)=>{
     res=JSON.parse(res.text)
     return res.suggest.map(x=>x.query);
   }
 );
-api.addSearchAlias('g', 'github搜索', 'https://github.com/search?q=','s',
+addSearchAlias('g', 'github搜索', 'https://github.com/search?q=','s',
   'https://api.github.com/search/repositories?q=',
   (res)=>{
     console.log(res)
@@ -58,11 +70,11 @@ api.addSearchAlias('g', 'github搜索', 'https://github.com/search?q=','s',
 
   }
 );
-api.addSearchAlias('o', '谷歌搜索', 'https://www.google.com/search?q=','s',
+addSearchAlias('o', '谷歌搜索', 'https://www.google.com/search?q=','s',
   'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=',
   (res)=>JSON.parse(res.text)[1]
 );
-api.addSearchAlias(
+addSearchAlias(
   'tb',
   'taobao',
   'https://s.taobao.com/search?q=',
@@ -84,7 +96,7 @@ api.addSearchAlias(
 );
 
 /*
-api.addSearchAlias(
+addSearchAlias(
   'w',
   '微信小程序',
   'https://developers.weixin.qq.com/doc/search.html?source=enter&doc_type=miniprogram&jumpbackUrl=%1Fdoc%2F&query=',
