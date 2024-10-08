@@ -35,6 +35,8 @@ map('cr', 'gx$');
 map('cl', 'gx0');
 // Go to the last tab
 map('<Ctrl-0>','g$');
+// Go to previous visited tab
+map('gp', '<Ctrl-6>');
 
 unmap('O');
 map('ss', 'oo');
