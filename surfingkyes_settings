@@ -47,6 +47,7 @@ map('<SPACE>', 'ChatGPT', function() {
 });
 
 addSearchAlias('j', 'JD', 'https://search.jd.com/Search?keyword=');
+addSearchAlias('d', 'douban', 'https://www.douban.com/search?cat=1001&q=');
 addSearchAlias('b', 'bilibili', 'https://search.bilibili.com/all?keyword=');
 addSearchAlias('r', 'Reddit', 'https://www.reddit.com/search/?q=');
 addSearchAlias('z', '知乎', 'https://www.zhihu.com/search?type=content&q=','s',
